@@ -2,8 +2,7 @@
   <div class="game">
     <div class="game-area">
       <div class="game-title">
-        <img src="logo.png" alt="Vue" />
-        <h1>Game Tictactoe!!</h1>
+        <h1> 🏆 Tictactoe 🏆</h1>
       </div>
 
       <div class="score-board d-flex justify-content-evenly">
@@ -139,7 +138,6 @@ export default {
 }
 
 .game {
-  background-image: url("../../public/cosmos.png");
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -196,9 +194,9 @@ export default {
 .game-info button:focus,
 .game-info button:hover {
   background: #1115;
-  border-color: rgba(var(--theme-color));
+  /* border-color: rgba(var(--theme-color));
   box-shadow: 0 0 10px rgba(var(--theme-color), 0.75);
-  color: rgba(var(--theme-color));
+  color: rgba(var(--theme-color)); */
   text-shadow: -1px -1px 0 #0007, -1px 1px 0 #0007, 1px -1px 0 #0007,
     1px 1px 0 #0007;
 }

@@ -12,13 +12,14 @@ const devConfig = {
         port: 8080,
         historyApiFallback: {
             index: '/index.html'
-        }
+        },
     },
     plugins: [
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                chatbox: 'chatbox@http://localhost:8081/remoteEntry.js'
+                chatbox: 'chatbox@http://localhost:8081/remoteEntry.js',
+                tictactoe: 'tictactoe@http://localhost:8082/remoteEntry.js'
             },
             shared: packageJson.dependencies
         })

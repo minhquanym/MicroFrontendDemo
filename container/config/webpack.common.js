@@ -13,6 +13,10 @@ module.exports = {
                         plugins: ['@babel/plugin-transform-runtime'],
                     }
                 }
+            },
+            {
+                test: /\.(png|jpe?g|gif|woff|svg|eot|ttf)$/i,
+                use: [{ loader: "file-loader" }]
             }
         ]
     },
