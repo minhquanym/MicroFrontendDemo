@@ -100,6 +100,9 @@ export default {
         this.botPick();
         return;
       }
+      if (this.stepNumber > 8) {
+        return;
+      }
       if (this.currentPlayer === "X") {
         this.yourScore++;
       } else {
@@ -120,6 +123,9 @@ export default {
       if (!this.hasWinner()) {
         this.stepNumber++;
         this.currentPlayer = "X";
+        return;
+      }
+      if (this.stepNumber > 8) {
         return;
       }
       if (this.currentPlayer === "X") {
