@@ -4,7 +4,9 @@
 #### members:
 * *Đinh Quốc Trung - 19020025* 
 * *Nguyễn Minh Quân - 19020019* 
-* *Lê Vũ Quang - 19020020* 
+* *Lê Vũ Quang - 19020020*
+ 
+----------------------------------------------------
 ----------------------------------------------------
 
 ## **1. What is micro frontend ?**
@@ -116,6 +118,7 @@ window.renderProducts = (containerId, history) => {
     * Buộc các dự án phải có các static domain để tải các bundle file tương ứng. Vì các chức năng Module Federation chỉ hỗ trợ cấu hình tải các file từ một remote url
 
 ## **5. Demo** - Tic tac toe
+- Github: https://github.com/minhquanym/MicroFrontendDemo?fbclid=IwAR0aJgzSPYmfwGbFgqWilBZpEQxBNoZOLSwRQu8p8Eqgel-DdkudsYs_lOE
 - Sử dụng **Module Federation Webpack** để triển khai microfrontend gồm 3 components:
     - Game **Tictactoe**: Vue
     - Khung **Chatbox**: React
@@ -123,7 +126,7 @@ window.renderProducts = (containerId, history) => {
 - Mỗi component sẽ được triển khai riêng biệt. **Container** sẽ gửi request HTTP đến các component con để thực hiện việc render chúng mỗi khi cần đến.
 - Như vậy, việc phát triển các thành phần được tách biệt hoàn toàn, kể cả framework khi ta đã sử dụng **Vue** để triển khai game và **React** để triển khai chatbox
 
-Ảnh demo 
+##### Ảnh demo 
 * ![](https://i.imgur.com/nor2lfL.png)
 * ![](https://i.imgur.com/gDzhMCm.png)
 * ![](https://i.imgur.com/vSG6O1I.png)
