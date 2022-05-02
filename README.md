@@ -123,3 +123,7 @@ window.renderProducts = (containerId, history) => {
 - Mỗi component sẽ được triển khai riêng biệt. **Container** sẽ gửi request HTTP đến các component con để thực hiện việc render chúng mỗi khi cần đến.
 - Như vậy, việc phát triển các thành phần được tách biệt hoàn toàn, kể cả framework khi ta đã sử dụng **Vue** để triển khai game và **React** để triển khai chatbox
 
+Ảnh demo 
+* ![](https://i.imgur.com/nor2lfL.png)
+* ![](https://i.imgur.com/gDzhMCm.png)
+* ![](https://i.imgur.com/vSG6O1I.png)
